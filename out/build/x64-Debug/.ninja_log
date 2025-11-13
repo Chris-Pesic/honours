@@ -1,0 +1,27 @@
+# ninja log v5
+52	936	7847564139980093	lib/glfw/src/CMakeFiles/glfw.dir/context.c.obj	f05c30dcb2922ed4
+208	984	7847564139980093	lib/glfw/src/CMakeFiles/glfw.dir/input.c.obj	d505c170d92e52cb
+263	1041	7847564139965031	lib/glfw/src/CMakeFiles/glfw.dir/monitor.c.obj	c23d94e288b85487
+299	1091	7847564139945753	lib/glfw/src/CMakeFiles/glfw.dir/platform.c.obj	a02ed606891a5b43
+420	1130	7847564140021246	lib/glfw/src/CMakeFiles/glfw.dir/window.c.obj	89c09338efb6f888
+355	1199	7847564140125548	lib/glfw/src/CMakeFiles/glfw.dir/vulkan.c.obj	c7dd3bb62a85697c
+475	1255	7847564140165685	lib/glfw/src/CMakeFiles/glfw.dir/egl_context.c.obj	62fad6cf45fb49c3
+118	1348	7847564140090327	lib/glfw/src/CMakeFiles/glfw.dir/init.c.obj	e4e0d5a28a6e4085
+4	1400	7847564140466253	CMakeFiles/glad.dir/lib/glad/src/glad.c.obj	3cf17c5cdcd50867
+27	1411	7847564141433517	CMakeFiles/main.dir/src/main.cpp.obj	35c949ba41790d68
+1041	1781	7847564148311092	lib/glfw/src/CMakeFiles/glfw.dir/null_monitor.c.obj	feb20fa31ec5cf0
+938	1824	7847564148393839	lib/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.obj	2fe2d5dc4ef6d43d
+1130	1880	7847564148393839	lib/glfw/src/CMakeFiles/glfw.dir/null_joystick.c.obj	b3c0effacb96b26f
+985	1917	7847564148413942	lib/glfw/src/CMakeFiles/glfw.dir/null_init.c.obj	fdc6e2045b56ccbb
+1400	1981	7847564147716280	glad.lib	f7048015889adb71
+1199	1981	7847564148484200	lib/glfw/src/CMakeFiles/glfw.dir/win32_module.c.obj	6ce4900989dd06a6
+1348	1982	7847564148554424	lib/glfw/src/CMakeFiles/glfw.dir/win32_thread.c.obj	4fa0ba5d0102187f
+1255	1983	7847564148569380	lib/glfw/src/CMakeFiles/glfw.dir/win32_time.c.obj	b80f92a9f26e17e8
+1092	1984	7847564148609492	lib/glfw/src/CMakeFiles/glfw.dir/null_window.c.obj	17bf185a92277cd1
+1411	2170	7847564152343711	lib/glfw/src/CMakeFiles/glfw.dir/win32_init.c.obj	6d637fd40abcb669
+1824	2203	7847564152668691	lib/glfw/src/CMakeFiles/glfw.dir/win32_monitor.c.obj	e6c26145125fbb49
+1781	2207	7847564152702211	lib/glfw/src/CMakeFiles/glfw.dir/win32_joystick.c.obj	365c54561d90d09e
+1918	2229	7847564152914934	lib/glfw/src/CMakeFiles/glfw.dir/wgl_context.c.obj	62127691658325f
+1880	2234	7847564152993842	lib/glfw/src/CMakeFiles/glfw.dir/win32_window.c.obj	7702a6e37600d01f
+2235	2584	7847564156429598	lib/glfw/src/glfw3.lib	936e49b9786cf1b8
+2584	3136	7847564161648711	bin/main.exe	36d5a6969ac3e225
