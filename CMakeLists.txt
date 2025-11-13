@@ -11,7 +11,6 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${OUTPUT_DIRECTORY})
 #### GLFW ####
 add_subdirectory(lib/glfw)
 
-# GLFW include directory
 set(GLFW_INCS "${CMAKE_CURRENT_SOURCE_DIR}/lib/glfw/include")
 
 #### GLAD ####
@@ -28,16 +27,14 @@ file(GLOB_RECURSE SOURCES src/*.cpp src/*.h)
 
 add_executable(main ${SOURCES})
 
-# Add include dirs for executable
 target_include_directories(main PRIVATE
     ${GLFW_INCS}
     ${CMAKE_CURRENT_SOURCE_DIR}/lib/glad/include
 )
 
-# Link libraries
 target_link_libraries(main PRIVATE glfw glad)
 
-#### Copy resources ####
+#### Resources ####
 add_custom_target(copy_resources ALL COMMAND ${CMAKE_COMMAND}
   -E copy_directory
     "${PROJECT_SOURCE_DIR}/res"
