@@ -15,11 +15,11 @@ set(GLFW_INCS "${CMAKE_CURRENT_SOURCE_DIR}/lib/glfw/include")
 
 #### GLAD ####
 add_library(glad
-    lib/glad/src/glad.c
+    "lib/glad/src/glad.c"
 )
 
 target_include_directories(glad PUBLIC
-    ${CMAKE_CURRENT_SOURCE_DIR}/lib/glad/include
+    "${CMAKE_CURRENT_SOURCE_DIR}/lib/glad/include"
 )
 
 #### Source files ####
@@ -29,7 +29,7 @@ add_executable(main ${SOURCES})
 
 target_include_directories(main PRIVATE
     ${GLFW_INCS}
-    ${CMAKE_CURRENT_SOURCE_DIR}/lib/glad/include
+    "${CMAKE_CURRENT_SOURCE_DIR}/lib/glad/include"
 )
 
 target_link_libraries(main PRIVATE glfw glad)
@@ -38,5 +38,5 @@ target_link_libraries(main PRIVATE glfw glad)
 add_custom_target(copy_resources ALL COMMAND ${CMAKE_COMMAND}
   -E copy_directory
     "${PROJECT_SOURCE_DIR}/res"
-    ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/$<CONFIGURATION>/res
+    "${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/$<CONFIGURATION>/res"
 )

@@ -2,6 +2,8 @@
 #include <GLFW/glfw3.h>
 #include <iostream>
 
+using namespace std;
+
 // Window resize callback
 void framebuffer_size_callback(GLFWwindow* window, int width, int height){
     glViewport(0, 0, width, height);
@@ -25,7 +27,7 @@ void Render() {
 
 int main(){
     if (!glfwInit()){
-        std::cerr << "Failed to initialize GLFW\n";
+        cerr << "Failed to initialize GLFW\n";
         return -1;
     }
 
@@ -36,7 +38,7 @@ int main(){
     // Create window
     GLFWwindow* window = glfwCreateWindow(800, 600, "SOC10101 - Honours Project", nullptr, nullptr);
     if (!window){
-        std::cerr << "Failed to create GLFW window\n";
+        cerr << "Failed to create GLFW window\n";
         glfwTerminate();
         return -1;
     }
@@ -44,7 +46,7 @@ int main(){
     glfwMakeContextCurrent(window);
 
     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)){
-        std::cerr << "Failed to initialize GLAD\n";
+        cerr << "Failed to initialize GLAD\n";
         glfwTerminate();
         return -1;
     }
@@ -52,6 +54,7 @@ int main(){
     glViewport(0, 0, 800, 600);
     glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
 
+    // Main Loop
     while (!glfwWindowShouldClose(window)){
         // Clear screen
         glClearColor(0.1f, 0.2f, 0.3f, 1.0f);
@@ -65,5 +68,3 @@ int main(){
     glfwTerminate();
     return 0;
 }
-
-
