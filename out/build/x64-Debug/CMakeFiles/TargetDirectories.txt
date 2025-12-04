@@ -1,6 +1,5 @@
 C:/Users/chris/ENU OneDrive/OneDrive - Edinburgh Napier University/Year 4/Modules/Honours Project/Project/honours/out/build/x64-Debug/CMakeFiles/glad.dir
 C:/Users/chris/ENU OneDrive/OneDrive - Edinburgh Napier University/Year 4/Modules/Honours Project/Project/honours/out/build/x64-Debug/CMakeFiles/main.dir
-C:/Users/chris/ENU OneDrive/OneDrive - Edinburgh Napier University/Year 4/Modules/Honours Project/Project/honours/out/build/x64-Debug/CMakeFiles/copy_resources.dir
 C:/Users/chris/ENU OneDrive/OneDrive - Edinburgh Napier University/Year 4/Modules/Honours Project/Project/honours/out/build/x64-Debug/CMakeFiles/edit_cache.dir
 C:/Users/chris/ENU OneDrive/OneDrive - Edinburgh Napier University/Year 4/Modules/Honours Project/Project/honours/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
 C:/Users/chris/ENU OneDrive/OneDrive - Edinburgh Napier University/Year 4/Modules/Honours Project/Project/honours/out/build/x64-Debug/CMakeFiles/list_install_components.dir
