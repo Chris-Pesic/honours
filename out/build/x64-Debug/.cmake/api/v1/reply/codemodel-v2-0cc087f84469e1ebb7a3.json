@@ -20,9 +20,8 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0,
-						2,
-						4
+						1,
+						3
 					]
 				},
 				{
@@ -33,7 +32,7 @@
 						3
 					],
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-lib.glfw-Debug-03740b9bb120b270d257.json",
+					"jsonFile" : "directory-lib.glfw-Debug-238ac1314225f9d06981.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -43,13 +42,13 @@
 					"source" : "lib/glfw",
 					"targetIndexes" : 
 					[
-						5
+						4
 					]
 				},
 				{
 					"build" : "lib/glfw/src",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-lib.glfw.src-Debug-9658bf6b74f916ae5571.json",
+					"jsonFile" : "directory-lib.glfw.src-Debug-313079db1c21e3817967.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -59,8 +58,8 @@
 					"source" : "lib/glfw/src",
 					"targetIndexes" : 
 					[
-						3,
-						6
+						2,
+						5
 					]
 				},
 				{
@@ -76,7 +75,7 @@
 					"source" : "lib/glfw/docs",
 					"targetIndexes" : 
 					[
-						1
+						0
 					]
 				}
 			],
@@ -92,12 +91,11 @@
 					[
 						0
 					],
-					"name" : "setup",
+					"name" : "HonoursProject",
 					"targetIndexes" : 
 					[
-						0,
-						2,
-						4
+						1,
+						3
 					]
 				},
 				{
@@ -111,22 +109,15 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						1,
-						3,
-						5,
-						6
+						0,
+						2,
+						4,
+						5
 					]
 				}
 			],
 			"targets" : 
 			[
-				{
-					"directoryIndex" : 0,
-					"id" : "copy_resources::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-copy_resources-Debug-ce63e816afb4e8048076.json",
-					"name" : "copy_resources",
-					"projectIndex" : 0
-				},
 				{
 					"directoryIndex" : 3,
 					"id" : "docs::@d0e396ec2d197a0e2deb",
@@ -137,7 +128,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "glad::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-glad-Debug-3c19a3b6aa30f44f16d0.json",
+					"jsonFile" : "target-glad-Debug-9d75b4bb8e1a79f94077.json",
 					"name" : "glad",
 					"projectIndex" : 0
 				},
@@ -151,7 +142,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "main::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-main-Debug-d419918abcd5bb9f0ce7.json",
+					"jsonFile" : "target-main-Debug-e307ce877a4f5f27b234.json",
 					"name" : "main",
 					"projectIndex" : 0
 				},
@@ -181,6 +172,6 @@
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 7
+		"minor" : 8
 	}
 }
