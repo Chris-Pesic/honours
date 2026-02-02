@@ -6,7 +6,9 @@ enum Camera_Movement {
     FORWARD,
     BACKWARD,
     LEFT,
-    RIGHT
+    RIGHT,
+    UP,
+    DOWN
 };
 
 class Camera {
@@ -30,7 +32,7 @@ public:
         Yaw(-90.0f),
         Pitch(0.0f),
         MovementSpeed(10.0f),
-        MouseSensitivity(0.1f)
+        MouseSensitivity(0.01f)
     {
         updateCameraVectors();
     }
@@ -42,10 +44,14 @@ public:
     void CameraMove(Camera_Movement direction, float deltaTime) {
         float velocity = MovementSpeed * deltaTime;
 
-        if (direction == FORWARD)  Position += Front * velocity;
-        if (direction == BACKWARD) Position -= Front * velocity;
+        glm::vec3 flatFront = glm::normalize(glm::vec3(Front.x, 0.0f, Front.z));
+
+        if (direction == FORWARD)  Position += flatFront * velocity;
+        if (direction == BACKWARD) Position -= flatFront * velocity;
         if (direction == LEFT)     Position -= Right * velocity;
         if (direction == RIGHT)    Position += Right * velocity;
+        if (direction == UP)       Position += WorldUp * velocity;
+        if (direction == DOWN)     Position -= WorldUp * velocity;
     }
 
     void CameraLook(float xoffset, float yoffset) {

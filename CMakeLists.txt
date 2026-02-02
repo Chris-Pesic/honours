@@ -14,7 +14,7 @@ set(GLFW_INCLUDES
 
 add_library(glad
     "lib/glad/src/glad.c"
-)
+ "src/sim_env.hpp")
 
 target_include_directories(glad PUBLIC
     "${CMAKE_CURRENT_SOURCE_DIR}/lib/glad/include"
@@ -32,10 +32,10 @@ set(SOURCES
 
 set(HEADERS
     "src/Shader.h"
-    "src/baseGrid.h"
+    "src/baseGrid.hpp"
 )
 
-add_executable(main ${SOURCES} ${HEADERS})
+add_executable(main ${SOURCES} "src/main.cpp")
 
 target_include_directories(main PRIVATE
     ${GLFW_INCLUDES}
