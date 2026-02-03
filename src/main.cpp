@@ -2,7 +2,6 @@
 #include <GLFW/glfw3.h>
 #include <iostream>
 
-<<<<<<< HEAD
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
@@ -56,34 +55,6 @@ void WindowSize(GLFWwindow* window, int width, int height){
 int main() {
     if (!glfwInit()) {
         std::cerr << "Failed to initialize GLFW\n";
-=======
-using namespace std;
-
-// Window resize callback
-void framebuffer_size_callback(GLFWwindow* window, int width, int height){
-    glViewport(0, 0, width, height);
-}
-
-void Load() {
-
-}
-
-void Reset() {
-
-}
-
-void Update() {
-
-}
-
-void Render() {
-
-}
-
-int main(){
-    if (!glfwInit()){
-        cerr << "Failed to initialize GLFW\n";
->>>>>>> main
         return -1;
     }
 
@@ -91,37 +62,23 @@ int main(){
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
-<<<<<<< HEAD
     GLFWwindow* window = glfwCreateWindow(800, 600, "Honours Project", nullptr, nullptr);
     if (!window) {
         std::cerr << "Failed to create GLFW window\n";
-=======
-    // Create window
-    GLFWwindow* window = glfwCreateWindow(800, 600, "SOC10101 - Honours Project", nullptr, nullptr);
-    if (!window){
-        cerr << "Failed to create GLFW window\n";
->>>>>>> main
         glfwTerminate();
         return -1;
     }
 
     glfwMakeContextCurrent(window);
 
-<<<<<<< HEAD
     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
         std::cerr << "Failed to initialize GLAD\n";
-=======
-    if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)){
-        cerr << "Failed to initialize GLAD\n";
-        glfwTerminate();
->>>>>>> main
+
         return -1;
     }
 
     glfwSetFramebufferSizeCallback(window, WindowSize);
     glfwSetCursorPosCallback(window, MouseCam);
-
-<<<<<<< HEAD
     glEnable(GL_DEPTH_TEST);
     glEnable(GL_CULL_FACE);
     glCullFace(GL_BACK);
@@ -153,13 +110,6 @@ int main(){
             //  Settings
             break;
         }
-=======
-    // Main Loop
-    while (!glfwWindowShouldClose(window)){
-        // Clear screen
-        glClearColor(0.1f, 0.2f, 0.3f, 1.0f);
-        glClear(GL_COLOR_BUFFER_BIT);
->>>>>>> main
 
         glfwSwapBuffers(window);
         glfwPollEvents();
