@@ -1,5 +1,5 @@
 # SOC10101 - Honours Project
-## Title of Project
+## Interactive Orbital Simulation and Trajectory Modelling in C++
 
 ## Table of Contents
 1. [Project Overview and Milestones](#project-overview-and-milestones)
