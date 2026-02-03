@@ -1,4 +1,4 @@
-#include "baseGrid.h"
+#include "baseGrid.hpp"
 #include <vector>
 #include <glm/gtc/type_ptr.hpp>
 #include <iostream>
@@ -29,7 +29,6 @@ void baseGrid::Create(float size, int divisions) {
     }
 
     vertexCount = lines.size();
-    std::cout << "Grid vertices: " << vertexCount << std::endl;
 
     glGenVertexArrays(1, &VAO);
     glGenBuffers(1, &VBO);
