@@ -52,8 +52,8 @@ void WindowSize(GLFWwindow* window, int width, int height){
     glViewport(0, 0, width, height);
 }
 
-int main(){
-    if (!glfwInit()){
+int main() {
+    if (!glfwInit()) {
         std::cerr << "Failed to initialize GLFW\n";
         return -1;
     }
@@ -63,7 +63,7 @@ int main(){
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
     GLFWwindow* window = glfwCreateWindow(800, 600, "Honours Project", nullptr, nullptr);
-    if (!window){
+    if (!window) {
         std::cerr << "Failed to create GLFW window\n";
         glfwTerminate();
         return -1;
@@ -71,7 +71,7 @@ int main(){
 
     glfwMakeContextCurrent(window);
 
-    if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)){
+    if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
         std::cerr << "Failed to initialize GLAD\n";
         return -1;
     }
@@ -83,8 +83,8 @@ int main(){
     glEnable(GL_CULL_FACE);
     glCullFace(GL_BACK);
 
-    
-    while (!glfwWindowShouldClose(window)){
+
+    while (!glfwWindowShouldClose(window)) {
         float currentFrame = glfwGetTime();
         deltaTime = currentFrame - lastFrame;
         lastFrame = currentFrame;
@@ -101,6 +101,7 @@ int main(){
 
         case 1:
             //  Simulation Environment
+            UnloadMenu();
             LoadGrid();
             RenderSim(window, camera);
             break;
